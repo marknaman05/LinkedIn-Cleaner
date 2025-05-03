@@ -17,6 +17,7 @@
             padding: 8px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            width: 200px;
         }
         button {
             padding: 8px;
@@ -41,20 +42,46 @@
             justify-content: space-between;
             align-items: center;
             padding: 4px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .indicator-item:last-child {
+            border-bottom: none;
+        }
+        .indicator-text {
+            flex-grow: 1;
+            margin-right: 8px;
         }
         .delete-btn {
             background-color: #dc3545;
-            padding: 4px 8px;
+            padding: 2px 8px;
+            min-width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
         }
         .delete-btn:hover {
             background-color: #c82333;
+        }
+        .indicator-type {
+            font-size: 0.8em;
+            color: #666;
+            margin-right: 8px;
+            min-width: 50px;
+        }
+        .add-container {
+            display: flex;
+            gap: 8px;
+            align-items: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h2>LinkedIn Cleaner Settings</h2>
-        <div>
+        <div class="add-container">
             <input type="text" id="newIndicator" placeholder="Add new spam indicator">
             <button id="addIndicator">Add</button>
         </div>

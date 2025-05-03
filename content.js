@@ -16,7 +16,6 @@ const defaultSpamIndicators = [
     'Bosscoder',
     'academy',
     'Connect with top mentors here',
-    '𝐜𝐫𝐚𝐜𝐤𝐞𝐝 𝐨𝐟𝐟𝐞𝐫𝐬',
     'DSA was extremely HARD'
 ];
 
@@ -26,9 +25,13 @@ let processedPosts = new WeakSet();
 
 // Load custom indicators from storage
 function loadCustomIndicators() {
-    chrome.storage.sync.get(['customIndicators'], function(result) {
+    chrome.storage.sync.get(['customIndicators', 'disabledDefaults'], function(result) {
         const customIndicators = result.customIndicators || [];
-        spamIndicators = [...defaultSpamIndicators, ...customIndicators];
+        const disabledDefaults = result.disabledDefaults || [];
+        
+        // Filter out disabled default indicators
+        const activeDefaults = defaultSpamIndicators.filter(indicator => !disabledDefaults.includes(indicator));
+        spamIndicators = [...activeDefaults, ...customIndicators];
         processFeed();
     });
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkedIn Cleaner Settings</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 8px;
+            background-color: #0077b5;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005582;
+        }
+        .indicator-list {
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 8px;
+        }
+        .indicator-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px 0;
+        }
+        .delete-btn {
+            background-color: #dc3545;
+            padding: 4px 8px;
+        }
+        .delete-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>LinkedIn Cleaner Settings</h2>
+        <div>
+            <input type="text" id="newIndicator" placeholder="Add new spam indicator">
+            <button id="addIndicator">Add</button>
+        </div>
+        <div class="indicator-list" id="indicatorList">
+            <!-- Indicators will be listed here -->
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html> 

@@ -1,0 +1,5 @@
+.feed-shared-update-v2[data-hidden="true"] {
+    display: none !important;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+} 

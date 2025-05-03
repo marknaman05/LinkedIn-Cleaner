@@ -11,6 +11,9 @@ A Chrome extension that helps you maintain a clean LinkedIn feed by automaticall
 - Real-time feed monitoring
 - Lightweight and efficient
 
+## UI
+![image](./image.png)
+
 ## Installation
 
 1. **Download the Extension**

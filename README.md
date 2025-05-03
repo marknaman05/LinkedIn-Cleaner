@@ -32,12 +32,6 @@ A Chrome extension that helps you maintain a clean LinkedIn feed by automaticall
    You need to create two icon files for the extension:
    - `icon48.png` (48x48 pixels)
    - `icon128.png` (128x128 pixels)
-   
-   You can create these files by:
-   - Using the provided `icon.svg` file
-   - Converting it to PNG using an online converter or image editor
-   - Or using any image editor to create your own icons
-   - Make sure to save them in the correct sizes
 
 3. **Load the Extension in Chrome**
    - Open Chrome and go to `chrome://extensions/`

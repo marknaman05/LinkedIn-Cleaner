@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle -->
+    <circle cx="64" cy="64" r="60" fill="#0077b5"/>
+    
+    <!-- Filter icon -->
+    <path d="M40 40 L88 40 L64 88 Z" fill="white"/>
+    
+    <!-- Checkmark -->
+    <path d="M52 64 L60 72 L76 56" stroke="white" stroke-width="4" fill="none"/>
+</svg> 

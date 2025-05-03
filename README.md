@@ -22,15 +22,27 @@ A Chrome extension that helps you maintain a clean LinkedIn feed by automaticall
      - `popup.html`
      - `popup.js`
      - `styles.css`
+     - `icon.svg` (source icon file)
      - `icon48.png` and `icon128.png` (extension icons)
 
-2. **Load the Extension in Chrome**
+2. **Create Icon Files**
+   You need to create two icon files for the extension:
+   - `icon48.png` (48x48 pixels)
+   - `icon128.png` (128x128 pixels)
+   
+   You can create these files by:
+   - Using the provided `icon.svg` file
+   - Converting it to PNG using an online converter or image editor
+   - Or using any image editor to create your own icons
+   - Make sure to save them in the correct sizes
+
+3. **Load the Extension in Chrome**
    - Open Chrome and go to `chrome://extensions/`
    - Enable "Developer mode" in the top right corner
    - Click "Load unpacked"
    - Select the directory containing the extension files
 
-3. **Verify Installation**
+4. **Verify Installation**
    - You should see the LinkedIn Cleaner extension in your extensions list
    - The extension icon should appear in your Chrome toolbar
 
@@ -75,6 +87,13 @@ If the extension isn't working as expected:
 
 3. **Reinstall**
    - If issues persist, try removing and reinstalling the extension
+
+4. **Icon Issues**
+   - If the extension icon is not showing:
+     - Make sure both icon files exist (`icon48.png` and `icon128.png`)
+     - Verify the icon files are in the correct format (PNG)
+     - Check that the file names match exactly what's in the manifest
+     - Try reloading the extension
 
 ## Contributing
 
